@@ -17,26 +17,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
+#define HAL_USE_PWM TRUE
 
-/* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 11
+#define HAL_USE_SERIAL TRUE
 
-/* Keyboard Matrix Assignments */
-#define MATRIX_ROW_PINS { B5, D7, F0, F7 }
-#define MATRIX_COL_PINS { F6, F5, F4, F1, C7, D3, C6, D5, D6, B4, B6 }
+#define SERIAL_USB_BUFFERS_SIZE 256
 
-/* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+#define HAL_USE_I2C TRUE
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
-
-#define LED_CAPS_LOCK_PIN  D4
-#define LED_PIN_ON_STATE 0
-
-/* NKRO */
-#ifdef NKRO_ENABLE
-#         define FORCE_NKRO
-#endif
+#include_next <halconf.h>
