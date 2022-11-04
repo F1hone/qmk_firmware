@@ -17,26 +17,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
+#include_next <mcuconf.h>
 
-/* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 11
+// #undef STM32_PLLM_VALUE
+// #undef STM32_PLLN_VALUE
+// #undef STM32_PLLP_VALUE
+// #undef STM32_PLLQ_VALUE
 
-/* Keyboard Matrix Assignments */
-#define MATRIX_ROW_PINS { B5, D7, F0, F7 }
-#define MATRIX_COL_PINS { F6, F5, F4, F1, C7, D3, C6, D5, D6, B4, B6 }
+// #define STM32_PLLM_VALUE    (STM32_HSECLK/1000000)
+// #define STM32_PLLN_VALUE    192
+// #define STM32_PLLP_VALUE    4
+// #define STM32_PLLQ_VALUE    4
 
-/* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+#undef STM32_I2C_USE_I2C1
+#define STM32_I2C_USE_I2C1 TRUE
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
+#undef STM32_PWM_USE_TIM3
+#define STM32_PWM_USE_TIM3 TRUE
 
-#define LED_CAPS_LOCK_PIN  D4
-#define LED_PIN_ON_STATE 0
-
-/* NKRO */
-#ifdef NKRO_ENABLE
-#         define FORCE_NKRO
-#endif
+#undef STM32_SERIAL_USE_USART1
+#define STM32_SERIAL_USE_USART1 TRUE

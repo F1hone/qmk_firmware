@@ -20,23 +20,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 11
+#define MATRIX_ROWS 5
+#define MATRIX_COLS 14
 
-/* Keyboard Matrix Assignments */
-#define MATRIX_ROW_PINS { B5, D7, F0, F7 }
-#define MATRIX_COL_PINS { F6, F5, F4, F1, C7, D3, C6, D5, D6, B4, B6 }
+/* key matrix pins */
+#define MATRIX_ROW_PINS { B10, A5, A6, A7, B0 }
+#define MATRIX_COL_PINS { B14, A8, A10, A15, B3, B4, B5, B7, A1, A2, A3, A4, B1, B2 }
 
-/* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+/* COL2ROW or ROW2COL */
+#define DIODE_DIRECTION ROW2COL
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
+#define LED_CAPS_LOCK_PIN C13
+#define LED_PIN_ON_STATE    0
+
+/* enable the nkro when using the VIA. */
+#define FORCE_NKRO
+
+/* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-#define LED_CAPS_LOCK_PIN  D4
-#define LED_PIN_ON_STATE 0
+#ifdef OLED_ENABLE
+#define OLED_DISPLAY_128X32
+#define I2C1_SCL_PIN        B8
+#define I2C1_SDA_PIN        B9
+#define OLED_BRIGHTNESS 128
 
-/* NKRO */
-#ifdef NKRO_ENABLE
-#         define FORCE_NKRO
 #endif
+
