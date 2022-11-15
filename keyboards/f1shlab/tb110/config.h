@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define MATRIX_COL_PINS { B4, B3, B14, B13, B12, B11, B10, B2, B1, B0, A7, A6, A5, A4, A3, A2, A1, A0 }
 #define MATRIX_ROW_PINS { B9, B8, B7, B6, B5, A15, A8, B15 }
+
 #define DIODE_DIRECTION COL2ROW
 
 /* define if matrix has ghost */
@@ -54,5 +55,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    define RGBLIGHT_DEFAULT_VAL RGBLIGHT_LIMIT_VAL/2
 #    define RGBLIGHT_LAYERS 3
 
-
 #define DYNAMIC_KEYMAP_LAYER_COUNT 2
+
+#define BOOTMAGIC_LITE_ROW 3
+#define BOOTMAGIC_LITE_COLUMN 1

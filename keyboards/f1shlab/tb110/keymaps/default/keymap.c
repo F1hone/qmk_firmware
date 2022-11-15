@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		          KC_A,   KC_D,  KC_F,  KC_J,  KC_K,    KC_L,    KC_SCLN,  KC_2,     KC_BSLS, KC_P1,    KC_P2,   KC_RGUI, KC_P3,    KC_PENT,  KC_RSFT,            KC_S,
 		          KC_ESC, KC_F4, KC_G,  KC_H,  KC_F6,            KC_QUOT,  KC_LALT,  KC_F11,  KC_SPC,   KC_P0,            KC_PDOT,  KC_UP,
 		KC_RCTL,  KC_Z,   KC_C,  KC_V,  KC_M,  KC_COMM, KC_DOT,  MO(1),     KC_3,     KC_ENT,  KC_PAUS,  KC_PSLS,          KC_PAST,                                KC_X,
-		                         KC_B,  KC_N,           KC_APP,  KC_SLSH,  KC_LALT,  KC_F12,  KC_DOWN,  KC_RGHT,          KC_PMNS,  KC_LEFT,
+		                         KC_B,  KC_N,           KC_APP,  KC_SLSH,  KC_RALT,  KC_F12,  KC_DOWN,  KC_RGHT,          KC_PMNS,  KC_LEFT,
 		KC_LCTL,  KC_GRV, KC_F2, KC_5,  KC_6,  KC_EQL,  KC_F8,   KC_MINS,  KC_NUM,   KC_F9,   KC_DEL,   KC_INS,           KC_PGUP,  KC_HOME,                      KC_F1,
 		KC_F5,    KC_1,   KC_3,  KC_4,  KC_7,  KC_8,    KC_9,    KC_0,     KC_DEL,   KC_F10,                              KC_PGDN,  KC_END,                       KC_2),
 
