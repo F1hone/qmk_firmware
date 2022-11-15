@@ -1,51 +1,53 @@
-/*
-Copyright 2022 F1shlab
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
-
+ /* Copyright 2021 Weirdo
+  *
+  * This program is free software: you can redistribute it and/or modify
+  * it under the terms of the GNU General Public License as published by
+  * the Free Software Foundation, either version 2 of the License, or
+  * (at your option) any later version.
+  *
+  * This program is distributed in the hope that it will be useful,
+  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  * GNU General Public License for more details.
+  *
+  * You should have received a copy of the GNU General Public License
+  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  */
 #pragma once
-
 #include "config_common.h"
 
 /* key matrix size */
 #define MATRIX_ROWS 5
-#define MATRIX_COLS 14
+#define MATRIX_COLS 15
 
-/* Keyboard Matrix Assignments */
-#define MATRIX_ROW_PINS { B7, D0, D1, D2, B3 }
-#define MATRIX_COL_PINS { E6, D6, D7, B4, B5, B6, C6, C7, F7, F6, F5, F4, F1, F0 }
-
-/* COL2ROW, ROW2COL */
-#define DIODE_DIRECTION COL2ROW
-
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
+#define MATRIX_COL_PINS { A3, A4, A5, A7, B0, B1, B10, B15, A8, A9, A10, B7, B6, B5, B4}
+#define MATRIX_ROW_PINS { B12, B13, B14, C11, A1}
+#define DIODE_DIRECTION ROW2COL
 #define DEBOUNCE 5
 
-/* NKRO */
-#define FORCE_NKRO
+
+/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
+#define LOCKING_SUPPORT_ENABLE
+
+/* Locking resynchronize hack */
+#define LOCKING_RESYNC_ENABLE
 
 /* RGB Matrix */
 #ifdef RGB_MATRIX_ENABLE
 
-#    define RGB_DI_PIN D4
-#    define RGBLED_NUM 70
+#    define RGB_DI_PIN A6
+#    define RGBLED_NUM 80
 #    define DRIVER_LED_TOTAL RGBLED_NUM
 
-#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 250
+#   define WS2812_PWM_DRIVER PWMD3  // default: PWMD2
+#   define WS2812_PWM_CHANNEL 1  // default: 2
+#   define WS2812_PWM_PAL_MODE 2  // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 2
+#   define WS2812_DMA_STREAM STM32_DMA1_STREAM3  // DMA Stream for TIMx_UP, see the respective reference manual for the appropriate values for your MCU.
+#   define WS2812_DMA_CHANNEL 3  // DMA Channel for TIMx_UP, see the respective reference manual for the appropriate values for your MCU.
+
+#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
 #    define RGBLIGHT_DEFAULT_VAL 150
-#    define RGBLIGHT_VAL_STEP 10
+#    define RGBLIGHT_VAL_STEP 20
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED
 #    define RGB_MATRIX_CENTER { 112, 32 }
 #    define RGB_MATRIX_KEYPRESSES
@@ -97,5 +99,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #   define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-
 #endif
+
+
