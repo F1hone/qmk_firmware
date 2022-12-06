@@ -55,12 +55,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* Underglow configuration
  */
+<<<<<<< HEAD
 // #define RGB_DI_PIN E2
 // #define RGBLIGHT_ANIMATIONS
 // #define RGBLED_NUM 8
 // #define RGBLIGHT_HUE_STEP 10
 // #define RGBLIGHT_SAT_STEP 17
 // #define RGBLIGHT_VAL_STEP 17
+=======
+#define RGB_DI_PIN E2
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_KNIGHT
+#define RGBLIGHT_EFFECT_CHRISTMAS
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#define RGBLIGHT_EFFECT_RGB_TEST
+#define RGBLIGHT_EFFECT_ALTERNATING
+#define RGBLIGHT_EFFECT_TWINKLE
+#define RGBLED_NUM 8
+#define RGBLIGHT_HUE_STEP 10
+#define RGBLIGHT_SAT_STEP 17
+#define RGBLIGHT_VAL_STEP 17
+>>>>>>> 2709b6ed616f8012ff4cfd3ee69a822a8d188351
 
 /*
  * Feature disable options
