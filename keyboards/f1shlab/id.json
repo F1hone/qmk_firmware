@@ -1,3 +1,6 @@
+test
+    "vid": "0x0125",
+    "pid": "0x0124",
 
 f1sh80
     "vid": "0x0257",
@@ -38,3 +41,30 @@ cx104
 kelowna_re
     "vid": "0x0266",
     "pid": "0x0256",
+
+static
+    "vid": "0x0267",
+    "pid": "0x0257",
+
+ki19
+    "vid": "0x0268",
+    "pid": "0x0258",
+
+fmini
+    "vid": "0x0269",
+    "pid": "0x0259",
+
+max_108
+    "vid": "0x0270",
+    "pid": "0x0260",
+
+barn
+    "vid": "0x0271",
+    "pid": "0x0261",
+
+game_ble
+
+    "vid": "0x0272",
+    "pid": "0x0262",
+
+
