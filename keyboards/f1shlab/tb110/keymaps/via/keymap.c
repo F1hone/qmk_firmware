@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_tb110(
-		KC_SLCK,  KC_Q,   KC_E,  KC_R,  KC_U,  KC_I,    KC_O,    KC_P,     KC_PSCR,  KC_4,    KC_P7,    KC_P8,            KC_P9,    KC_PPLS,                      KC_W,
+		KC_SCRL,  KC_Q,   KC_E,  KC_R,  KC_U,  KC_I,    KC_O,    KC_P,     KC_PSCR,  KC_4,    KC_P7,    KC_P8,            KC_P9,    KC_PPLS,                      KC_W,
 		          KC_TAB, KC_F3, KC_T,  KC_Y,  KC_RBRC, KC_F7,   KC_LBRC,  KC_1,     KC_BSPC, KC_P4,    KC_P5,            KC_P6,              KC_LSFT,  KC_LGUI,  KC_CAPS,
 		          KC_A,   KC_D,  KC_F,  KC_J,  KC_K,    KC_L,    KC_SCLN,  KC_2,     KC_BSLS, KC_P1,    KC_P2,   KC_RGUI, KC_P3,    KC_PENT,  KC_RSFT,            KC_S,
 		          KC_ESC, KC_F4, KC_G,  KC_H,  KC_F6,            KC_QUOT,  KC_LALT,  KC_F11,  KC_SPC,   KC_P0,            KC_PDOT,  KC_UP,

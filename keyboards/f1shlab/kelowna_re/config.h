@@ -37,7 +37,7 @@
 
 #    define RGB_DI_PIN A6
 #    define RGBLED_NUM 80
-#    define DRIVER_LED_TOTAL RGBLED_NUM
+#    define RGB_MATRIX_LED_COUNT RGBLED_NUM
 
 #   define WS2812_PWM_DRIVER PWMD3  // default: PWMD2
 #   define WS2812_PWM_CHANNEL 1  // default: 2

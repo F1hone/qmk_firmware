@@ -55,37 +55,15 @@ led_config_t g_led_config = {
     }
 };
 
-void rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
-    if (rgb_matrix_is_enabled()) {
-        if (kb_cums.underground_rgb_sw == 1) {
-            for (uint8_t i = led_min; i < led_max; ++i) {
-                if ((g_led_config.flags[i] == 4)) {
-                    rgb_matrix_set_color(i, 0, 0, 0);
-                }
-            }
-        } else if (kb_cums.underground_rgb_sw == 2) {
-            for (uint8_t i = led_min; i < led_max; ++i) {
-                if ((g_led_config.flags[i] == 2)) {
-                    rgb_matrix_set_color(i, 0, 0, 0);
-                }
+bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+    if (host_keyboard_led_state().caps_lock) {
+        for (uint8_t i = led_min; i < led_max; i++) {
+            if (g_led_config.flags[i] & LED_FLAG_KEYLIGHT) {
+                rgb_matrix_set_color(28, RGB_RED);
             }
         }
-    } else {
-        rgb_matrix_set_color_all(0,0,0);
     }
-    if (host_keyboard_led_state().caps_lock) {
-        RGB_MATRIX_INDICATOR_SET_COLOR(28, rgblight_get_val(), rgblight_get_val(), rgblight_get_val());
-    }
-}
-
-
-void eeconfig_init_kb(void) {
-    kb_cums.raw = 0;
-    eeconfig_update_kb(kb_cums.raw);
-}
-
-void keyboard_post_init_kb(void) {
-    kb_cums.underground_rgb_sw = eeconfig_read_kb();
+    return false;
 }
 
 #endif

@@ -21,6 +21,9 @@ MCU = atmega32u4
 # Bootloader selection
 BOOTLOADER = atmel-dfu
 
+# Processor frequency
+F_CPU = 8000000
+
 # Build Options
 #   change yes to no to disable
 #
@@ -42,5 +45,5 @@ JOYSTICK_DRIVER = analog	# or 'digital'
 
 SRC += analog.c
 
-# BLUETOOTH_ENABLE = yes
-# BLUETOOTH_DRIVER = BluefruitLE
+BLUETOOTH_ENABLE = yes
+BLUETOOTH_DRIVER = BluefruitLE

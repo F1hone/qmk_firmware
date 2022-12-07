@@ -42,8 +42,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* joystick support */
 #ifdef JOYSTICK_ENABLE
-#   define JOYSTICK_AXES_COUNT 2
+#   define JOYSTICK_AXIS_COUNT 2
 #   define JOYSTICK_BUTTON_COUNT 1
-#   define JOYSTICK_AXES_RESOLUTION 8
+#   define JOYSTICK_AXIS_RESOLUTION 8
 #endif
 
+/*Bluetooh*/
+#ifdef BLUETOOTH_ENABLE
+#define BLUEFRUIT_LE_RST_PIN D4
+#define BLUEFRUIT_LE_CS_PIN B4
+#define BLUEFRUIT_LE_IRQ_PIN E6
+#define BATTERY_LEVEL_PIN B5
+#define BATTERY_LEVEL_POLL 5000
+#define LED_LOW_BATTERY_PIN D6
+#endif
