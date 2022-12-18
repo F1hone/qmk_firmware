@@ -80,8 +80,8 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
 #ifdef JOYSTICK_ENABLE
     /* Joystick pins */
 #   ifndef JOYSTICK_X_PIN
-#       define JOYSTICK_X_PIN D7
-#       define JOYSTICK_Y_PIN B6
+#       define JOYSTICK_X_PIN B6
+#       define JOYSTICK_Y_PIN D7
 #   endif
 
     // /* Joystick + Encoder fix */
@@ -94,14 +94,8 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
 
     /* Joystick axes settings */
     joystick_config_t joystick_axes[JOYSTICK_AXIS_COUNT] = {
-        [0] = JOYSTICK_AXIS_IN(JOYSTICK_X_PIN, 268, 514, 813),
+        [0] = JOYSTICK_AXIS_IN(JOYSTICK_X_PIN, 813, 514, 268),
         [1] = JOYSTICK_AXIS_IN(JOYSTICK_Y_PIN, 865, 519, 260)
     };
 #endif
-
-// /* joystick config */
-// joystick_config_t joystick_axes[JOYSTICK_AXES_COUNT] = {
-//     [0] = JOYSTICK_AXIS_IN(B5, 1023, 512, 0),
-//     [1] = JOYSTICK_AXIS_IN(B4, 0, 512, 1023)
-// };
 
