@@ -1,3 +1,9 @@
+# MCU name
+MCU = atmega32a
+
+# Bootloader selection
+BOOTLOADER = bootloadhid
+
 # Processor frequency
 F_CPU = 12000000
 
