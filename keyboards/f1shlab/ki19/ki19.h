@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "quantum.h"
 
-#define LAYOUT_all( \
+#define LAYOUT( \
     k00, k01, k02, k03, k04,\
     k10, k11, k12, k13, k14,\
     k20, k21, k22,      k24,\

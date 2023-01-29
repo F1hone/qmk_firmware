@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // main layer
-[0] = LAYOUT_all(
+[0] = LAYOUT(
   KC_NUM,  KC_PSLS,  KC_PAST,  KC_PMNS, KC_F1,
   KC_P1,   KC_P2,    KC_P3,    KC_PPLS, KC_F2,
   KC_P4,   KC_P5,    KC_P6,    KC_ENT,
@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_P0,   KC_P0,    KC_PDOT
   ),
 // basic function layer
-[1] = LAYOUT_all(
+[1] = LAYOUT(
   KC_F1,    KC_F2,    KC_F3,  KC_F4,  KC_F5,
   KC_F6,    KC_F7,    KC_F8,  KC_F9,  KC_F10,
   KC_F11,   KC_F12,   KC_F13, KC_ENT,
@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_LEFT,  KC_DOWN,  KC_RGHT
   ),
 // extra layer for VIA
-[2] = LAYOUT_all(
+[2] = LAYOUT(
   KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,
   KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS, KC_TRNS,
   KC_TRNS,  KC_TRNS,  KC_TRNS, KC_TRNS,
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS,  KC_TRNS,  KC_TRNS
   ),
 // extra layer for VIA
-[3] = LAYOUT_all(
+[3] = LAYOUT(
   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,
