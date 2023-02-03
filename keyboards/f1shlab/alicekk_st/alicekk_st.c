@@ -259,7 +259,7 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
             RGB_MATRIX_INDICATOR_SET_COLOR(SCRL_LOCK_LED_INDEX1, 0, 0, 0);
         }
     }
-#    endif // NUM_LOCK_LED_INDEX
+#    endif // SCRL_LOCK_LED_INDEX
     return true;
 }
 

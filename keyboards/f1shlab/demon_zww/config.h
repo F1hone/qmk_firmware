@@ -1,5 +1,5 @@
 /*
-Copyright 2022 F1shlab
+Copyright 2023 F1shlab
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* key matrix size */
 #define MATRIX_ROWS 5
-#define MATRIX_COLS 14
+#define MATRIX_COLS 15
 
 /* Keyboard Matrix Assignments */
 #define MATRIX_ROW_PINS { B7, D0, D1, D2, B3 }
-#define MATRIX_COL_PINS { E6, D6, D7, B4, B5, B6, C6, C7, F7, F6, F5, F4, F1, F0 }
+#define MATRIX_COL_PINS { E6, D3, D6, D7, B4, B5, B6, C6, C7, F7, F6, F5, F4, F1, F0 }
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -37,12 +37,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define FORCE_NKRO
 
 /* Enable CapsLcok LED */
-#define CAPS_LOCK_LED_INDEX 28
+#define CAPS_LOCK_LED_INDEX 30
 
 /* RGB Matrix */
+#ifdef RGB_MATRIX_ENABLE
 
 #    define RGB_DI_PIN D4
-#    define RGBLED_NUM 70
+#    define RGBLED_NUM 76
 #    define RGB_MATRIX_LED_COUNT RGBLED_NUM
 
 #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 250
@@ -99,3 +100,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #   define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
+#endif

@@ -39,7 +39,7 @@ bool dip_switch_update_kb(uint8_t index, bool active) {
 
 #endif // DIP_SWITCH_ENABLE
 
-#if defined(RGB_MATRIX_ENABLE) && (defined(CAPS_LOCK_LED_INDEX) || defined(NUM_LOCK_LED_INDEX))
+#if defined(RGB_MATRIX_ENABLE) && (defined(CAPS_LOCK_LED_INDEX) || defined(NUM_LOCK_LED_INDEX) || defined(SCRL_LOCK_LED_INDEX))
 
 bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
     if (!process_record_user(keycode, record)) {
@@ -81,6 +81,7 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
         }
     }
 #    endif // CAPS_LOCK_LED_INDEX
+
 #    if defined(NUM_LOCK_LED_INDEX)
     if (host_keyboard_led_state().num_lock) {
         RGB_MATRIX_INDICATOR_SET_COLOR(NUM_LOCK_LED_INDEX, 255, 255, 255);
@@ -90,6 +91,16 @@ bool rgb_matrix_indicators_advanced_kb(uint8_t led_min, uint8_t led_max) {
         }
     }
 #    endif // NUM_LOCK_LED_INDEX
+
+// #    if defined(SCRL_LOCK_LED_INDEX)
+//     if (host_keyboard_led_state().scroll_lock) {
+//         RGB_MATRIX_INDICATOR_SET_COLOR(SCRL_LOCK_LED_INDEX, 255, 255, 255);
+//     } else {
+//         if (!rgb_matrix_get_flags()) {
+//             RGB_MATRIX_INDICATOR_SET_COLOR(SCRL_LOCK_LED_INDEX, 0, 0, 0);
+//         }
+//     }
+// #    endif // SCRL_LOCK_LED_INDEX
     return true;
 }
 
