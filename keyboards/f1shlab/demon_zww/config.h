@@ -40,19 +40,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CAPS_LOCK_LED_INDEX 30
 
 /* RGB Matrix */
-#ifdef RGB_MATRIX_ENABLE
 
-#    define RGB_DI_PIN D4
-#    define RGBLED_NUM 76
-#    define RGB_MATRIX_LED_COUNT RGBLED_NUM
+#   define RGB_DI_PIN D4
+#   define RGB_MATRIX_LED_COUNT 76
 
-#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 250
-#    define RGBLIGHT_DEFAULT_VAL 150
-#    define RGBLIGHT_VAL_STEP 10
-#    define RGB_DISABLE_WHEN_USB_SUSPENDED
-#    define RGB_MATRIX_CENTER { 112, 32 }
-#    define RGB_MATRIX_KEYPRESSES
-#    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#   define RGB_MATRIX_MAXIMUM_BRIGHTNESS 250
+#   define RGBLIGHT_DEFAULT_VAL 150
+#   define RGBLIGHT_VAL_STEP 10
+#   define RGB_DISABLE_WHEN_USB_SUSPENDED
+#   define RGB_MATRIX_CENTER { 112, 32 }
+#   define RGB_MATRIX_KEYPRESSES
+#   define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 #   define ENABLE_RGB_MATRIX_ALPHAS_MODS
 #   define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
@@ -99,5 +97,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #   define ENABLE_RGB_MATRIX_MULTISPLASH
 #   define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #   define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
-
-#endif

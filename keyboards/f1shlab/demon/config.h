@@ -16,12 +16,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #pragma once
 
-#define CAPS_LOCK_LED_INDEX 43
+#define CAPS_LOCK_LED_INDEX 30
 
-#define RGB_DI_PIN B3
+#define RGB_DI_PIN D4
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 250
 #define RGBLIGHT_VAL_STEP 10
-#define RGB_MATRIX_LED_COUNT 67
+#define RGB_MATRIX_LED_COUNT 76
 #define RGB_MATRIX_DEFAULT_VAL 120
 #define RGB_MATRIX_CENTER { 112, 32 }
 

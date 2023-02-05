@@ -45,9 +45,10 @@ led_config_t g_led_config = {
 #if defined(RGB_MATRIX_ENABLE) && defined(CAPS_LOCK_LED_INDEX)
 
 bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
-    if (!process_record_user(keycode, record)) { return false; }
+    if (!process_record_user(keycode, record)) {
+        return false;
+    }
     switch (keycode) {
-#ifdef RGB_MATRIX_ENABLE
         case RGB_TOG:
             if (record->event.pressed) {
                 switch (rgb_matrix_get_flags()) {
@@ -65,7 +66,6 @@ bool process_record_kb(uint16_t keycode, keyrecord_t *record) {
                 rgb_matrix_enable();
             }
             return false;
-#endif
     }
     return true;
 }
