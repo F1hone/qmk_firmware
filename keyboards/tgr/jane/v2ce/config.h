@@ -16,10 +16,6 @@
 
 #pragma once
 
-#include "config_common.h"
-
-#define MATRIX_ROWS 8
-#define MATRIX_COLS 15
 
 //                        0   1   2   3   4   5   6   7   8   9   A   B   C   D   E
 #define MATRIX_ROW_PINS { B0, B1, B2, B3, B4, B5, B6, B7 }
