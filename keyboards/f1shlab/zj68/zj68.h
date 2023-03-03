@@ -32,3 +32,24 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	{ K300,  K301,  K302,  K303,  K304,  K305,  K306,  K307,  K308,  K309,  K310,  K311,  KC_NO, K313,  K314 }, \
 	{ K400,  K401,  K402,  KC_NO, KC_NO, K405,  KC_NO, KC_NO, KC_NO, K409,  K410,  K411,  K412,  K413,  K414 }  \
 }
+
+enum keyboard_keycodes {
+#ifdef VIA_ENABLE
+    LOCK_GUI = USER00,
+    TOG_MACOS_KEYMAP,
+    KC_MISSION_CONTROL,
+    KC_LAUNCHPAD,
+    NEW_SAFE_RANGE = SAFE_RANGE  // Important!
+#else
+    LOCK_GUI = SAFE_RANGE,
+    TOG_MACOS_KEYMAP,
+    KC_MISSION_CONTROL,
+    KC_LAUNCHPAD,
+    NEW_SAFE_RANGE   // Important!
+#endif
+};
+
+#define KC_LG    LOCK_GUI
+#define KC_MACOS TOG_MACOS_KEYMAP
+#define KC_MCTL  KC_MISSION_CONTROL
+#define KC_LPAD  KC_LAUNCHPAD

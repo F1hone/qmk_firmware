@@ -31,25 +31,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-<<<<<<< HEAD
 /* Backlight configuration
  */
 #define BACKLIGHT_LEVELS 4
 
 #define BACKLIGHT_BREATHING
 
-=======
->>>>>>> d1a430b348a9578307f64823da2aebf36932cc52
 /* Underglow configuration
  */
-<<<<<<< HEAD
 // #define RGB_DI_PIN E2
 // #define RGBLIGHT_ANIMATIONS
 // #define RGBLED_NUM 8
 // #define RGBLIGHT_HUE_STEP 10
 // #define RGBLIGHT_SAT_STEP 17
 // #define RGBLIGHT_VAL_STEP 17
-=======
 #define RGB_DI_PIN E2
 #define RGBLIGHT_EFFECT_BREATHING
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
@@ -65,7 +60,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
->>>>>>> 2709b6ed616f8012ff4cfd3ee69a822a8d188351
 
 /*
  * Feature disable options
