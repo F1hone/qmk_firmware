@@ -17,13 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#include "config_common.h"
-
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 15
 
-#define MATRIX_COL_PINS { B8, B7, B6, B5, B4, B3, B11, A15, A9, A10, B13, B14, B12, A5, C15 }
+#define MATRIX_COL_PINS { B8, B7, B6, B5, B4, B3, B11, A15, A9, A10, B13, B14, B12, A5, A4 }
 #define MATRIX_ROW_PINS { B10, B1, B0, A7, A6 }
 
 #define DIODE_DIRECTION COL2ROW

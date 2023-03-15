@@ -13,4 +13,3 @@ WS2812_DRIVER = i2c
 HAPTIC_ENABLE = yes
 HAPTIC_DRIVER = SOLENOID
 
-LAYOUTS = tkl_f13_ansi tkl_f13_ansi_tsangan tkl_f13_iso tkl_f13_iso_tsangan

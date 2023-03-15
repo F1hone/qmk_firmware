@@ -2,8 +2,8 @@
     "manufacturer": "F1shlab",
     "keyboard_name": "Kelowna-RGB64_re",
     "maintainer": "F1hone",
-    "processor": "STM32F103",
-    "bootloader": "stm32duino",
+    "development_board": "bluepill",
+    "bootloader": "uf2boot",
     "diode_direction": "ROW2COL",
     "usb": {
         "vid": "0x0266",

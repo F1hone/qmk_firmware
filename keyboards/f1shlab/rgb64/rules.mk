@@ -2,6 +2,7 @@
 MCU = STM32F103
 
 # Bootloader selection
+# BOOTLOADER = uf2boot
 BOOTLOADER = stm32duino
 
 # Build Options
