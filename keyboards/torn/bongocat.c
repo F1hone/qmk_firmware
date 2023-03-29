@@ -18,8 +18,8 @@
 
 #ifdef OLED_ENABLE
 
-#define IDLE_SPEED 20 // idle below this wpm
-#define TAP_SPEED 60 // tap above this wpm
+#define IDLE_SPEED 5 // idle below this wpm
+#define TAP_SPEED 25 // tap above this wpm
 
 #define FRAME_DURATION 200 // how long each frame lasts in ms
 #define SLEEP_DURATION 15000 // sleep timeout
