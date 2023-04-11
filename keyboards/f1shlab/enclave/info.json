@@ -1,30 +1,67 @@
 {
-    "manufacturer": "keyquest",
     "keyboard_name": "Enclave-1",
+    "manufacturer": "keyquest",
+    "url": "",
     "maintainer": "keyquesttech",
     "usb": {
         "vid": "0x1117",
         "pid": "0x0E0E",
-        "device_version": "0.0.1"
+        "device_version": "0.0.2"
     },
-    "layout_aliases": {
-        "LAYOUT": "LAYOUT_ortho_3x3"
+    "development_board": "bluepill",
+    "bootloader": "uf2boot",
+    "matrix_pins": {
+        "rows": ["B13", "A5", "A4"],
+        "cols": ["B12", "B14", "A2"]
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": true,
+        "backlight": false,
+        "rgblight": true,
+        "audio": false,
+        "key_lock": false,
+        "lto": true
+    },
+    "rgblight": {
+        "pin": "A3",
+        "led_count": 2,
+        "hue_steps": 10,
+        "saturation_steps": 10,
+        "brightness_steps": 10,
+        "max_brightness": 255,
+        "sleep": true,
+        "animations": {
+            "alternating": true,
+            "breathing": true,
+            "christmas": true,
+            "knight": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "rgb_test": true,
+            "snake": true,
+            "static_gradient": true,
+            "twinkle": true
+        }
     },
     "layouts": {
         "LAYOUT_ortho_3x3": {
             "layout": [
-                { "matrix": [0, 0], "x": 0, "y": 0 },
-                { "matrix": [0, 1], "x": 1, "y": 0 },
-                { "matrix": [0, 2], "x": 2, "y": 0 },
-
-                { "matrix": [1, 0], "x": 0, "y": 1 },
-                { "matrix": [1, 1], "x": 1, "y": 1 },
-                { "matrix": [1, 2], "x": 2, "y": 1 },
-
-                { "matrix": [2, 0], "x": 0, "y": 2 },
-                { "matrix": [2, 1], "x": 1, "y": 2 },
-                { "matrix": [2, 2], "x": 2, "y": 2 }
-            ]
+                {"label": "K00 (B0,B3)", "matrix": [0, 0], "x": 0, "y": 0},
+                {"label": "K01 (B0,B4)", "matrix": [0, 1], "x": 1, "y": 0},
+                {"label": "K02 (B0,B5)", "matrix": [0, 2], "x": 2, "y": 0},
+                {"label": "K10 (B1,B3)", "matrix": [1, 0], "x": 0, "y": 1},
+                {"label": "K11 (B1,B4)", "matrix": [1, 1], "x": 1, "y": 1},
+                {"label": "K12 (B1,B5)", "matrix": [1, 2], "x": 2, "y": 1},
+                {"label": "K20 (B2,B3)", "matrix": [2, 0], "x": 0, "y": 2},
+                {"label": "K21 (B2,B4)", "matrix": [2, 1], "x": 1, "y": 2},
+                {"label": "K22 (B2,B5)", "matrix": [2, 2], "x": 2, "y": 2}
+           ]
         }
     }
 }
