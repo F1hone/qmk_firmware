@@ -11,8 +11,8 @@
     "development_board": "bluepill",
     "bootloader": "uf2boot",
     "matrix_pins": {
-        "rows": ["B0", "B1", "B2", "B3", "B4", "B5"],
-        "cols": ["B6", "A8", "B9", "B10", "B11", "B12", "B13", "B14", "B15", "A1", "A0", "A2", "A9", "A3", "A4", "A5", "A6", "A7", "B7"]
+        "rows": ["A15", "B9", "B7", "A0", "A1", "A2"],
+        "cols": ["B14", "B13", "B12", "B11", "B10", "B2", "B1", "B0", "A7", "A6", "A5", "A4", "A3", "A13", "A14", "B6", "B5", "B4", "B3"]
     },
     "diode_direction": "COL2ROW",
     "features": {
@@ -31,12 +31,14 @@
         "pin": "B8",
         "levels": 10,
         "breathing": true,
-        "breathing_period": 10
+        "breathing_period": 10,
+        "on_state": 0
     },
     "indicators": {
-        "num_lock": "A10",
-        "caps_lock": "A11",
-        "scroll_lock": "A12"
+        "num_lock": "B15",
+        "caps_lock": "A8",
+        "scroll_lock": "A9",
+        "on_state": 0
     },
     "layouts": {
         "LAYOUT": {
@@ -98,6 +100,7 @@
                 {"label": "K2F (B2,D5)", "matrix": [2, 15], "x": 16, "y": 2},
                 {"label": "K2G (B2,D6)", "matrix": [2, 16], "x": 17, "y": 2},
                 {"label": "K2H (B2,D7)", "matrix": [2, 17], "x": 18, "y": 2},
+                {"label": "K2I (B3,E0)", "matrix": [2, 18], "x": 19, "y": 2, "h": 2},
 
                 {"label": "K30 (B3,B6)", "matrix": [3, 0], "x": 0, "y": 3, "w": 1.75},
                 {"label": "K31 (B3,E4)", "matrix": [3, 1], "x": 1.75, "y": 3},
@@ -116,7 +119,6 @@
                 {"label": "K3F (B3,D5)", "matrix": [3, 15], "x": 16, "y": 3},
                 {"label": "K3G (B3,D6)", "matrix": [3, 16], "x": 17, "y": 3},
                 {"label": "K3H (B3,D7)", "matrix": [3, 17], "x": 18, "y": 3},
-                {"label": "K3I (B3,E0)", "matrix": [3, 18], "x": 19, "y": 2, "h": 2},
 
                 {"label": "K40 (B4,B6)", "matrix": [4, 0], "x": 0, "y": 4, "w": 2.25},
                 {"label": "K41 (B4,E4)", "matrix": [4, 1], "x": 2.25, "y": 4},
@@ -135,6 +137,7 @@
                 {"label": "K4F (B4,D5)", "matrix": [4, 15], "x": 16, "y": 4},
                 {"label": "K4G (B4,D6)", "matrix": [4, 16], "x": 17, "y": 4},
                 {"label": "K4H (B4,D7)", "matrix": [4, 17], "x": 18, "y": 4},
+                {"label": "K4I (B5,E0)", "matrix": [4, 18], "x": 19, "y": 4, "h": 2}
 
                 {"label": "K50 (B5,B6)", "matrix": [5, 0], "x": 0, "y": 5, "w": 1.25},
                 {"label": "K51 (B5,E4)", "matrix": [5, 1], "x": 1.25, "y": 5},
@@ -147,8 +150,7 @@
                 {"label": "K5D (B5,D3)", "matrix": [5, 13], "x": 14, "y": 5},
                 {"label": "K5E (B5,D4)", "matrix": [5, 14], "x": 15, "y": 5},
                 {"label": "K5G (B5,D6)", "matrix": [5, 16], "x": 16, "y": 5, "w": 2},
-                {"label": "K5H (B5,D7)", "matrix": [5, 17], "x": 18, "y": 5},
-                {"label": "K5I (B5,E0)", "matrix": [5, 18], "x": 19, "y": 4, "h": 2}
+                {"label": "K5H (B5,D7)", "matrix": [5, 17], "x": 18, "y": 5}
            ]
         }
     }

@@ -33,3 +33,7 @@
 
 /* Enable CapsLcok LED */
 #define CAPS_LOCK_LED_INDEX 50
+
+// #define NUM_LOCK_LED_INDEX 15
+
+// #define SCRL_LOCK_LED_INDEX 14

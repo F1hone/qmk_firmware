@@ -21,7 +21,8 @@
 
 #pragma once
 
-#include_next <mcuconf.h>
+#include_next <board.h>
 
-#undef STM32_PWM_USE_TIM4
-#define STM32_PWM_USE_TIM4 TRUE
+#undef STM32_HSECLK
+#define STM32_HSECLK 16000000
+
