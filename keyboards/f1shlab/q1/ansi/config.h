@@ -1,4 +1,4 @@
-/* Copyright 2022 @ Keychron (https://www.keychron.com)
+/* Copyright 2021 @ Keychron (https://www.keychron.com)
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,23 +17,10 @@
 #pragma once
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { B5, B4, B3, A15, A14, A13 }
-#define MATRIX_COL_PINS { C14, C15, A0, A1, A2, A3, A4, A5, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
+#define MATRIX_ROW_PINS { D3, D2, B3, B2, B1, B0 }
+#define MATRIX_COL_PINS { D5, D4, D6, D7, B4, B5, B6, C6, C7, F7, F6, F5, F4, F1, F0 }
 
 /* RGB Matrix Configuration */
-#define DRIVER_1_LED_TOTAL 49
-#define DRIVER_2_LED_TOTAL 39
+#define DRIVER_1_LED_TOTAL 59
+#define DRIVER_2_LED_TOTAL 23
 #define RGB_MATRIX_LED_COUNT (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
-
-/* Encoder Configuration */
-#define ENCODER_DEFAULT_POS 0x3
-
-#define CKLED2001_CURRENT_TUNE \
-    { 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44 }
-
-/* Enable CapsLcok LED */
-#define CAPS_LOCK_LED_INDEX 51
-
-// #define NUM_LOCK_LED_INDEX 15
-
-// #define SCRL_LOCK_LED_INDEX 14

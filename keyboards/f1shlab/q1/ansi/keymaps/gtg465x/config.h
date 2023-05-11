@@ -1,4 +1,4 @@
-/* Copyright 2022 @ Keychron (https://www.keychron.com)
+/* Copyright 2021 @ Grayson Carr
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,24 +16,10 @@
 
 #pragma once
 
-/* key matrix pins */
-#define MATRIX_ROW_PINS { B5, B4, B3, A15, A14, A13 }
-#define MATRIX_COL_PINS { C14, C15, A0, A1, A2, A3, A4, A5, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
-
 /* RGB Matrix Configuration */
-#define DRIVER_1_LED_TOTAL 49
-#define DRIVER_2_LED_TOTAL 39
-#define RGB_MATRIX_LED_COUNT (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
-
-/* Encoder Configuration */
-#define ENCODER_DEFAULT_POS 0x3
-
-#define CKLED2001_CURRENT_TUNE \
-    { 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44 }
-
-/* Enable CapsLcok LED */
-#define CAPS_LOCK_LED_INDEX 51
-
-// #define NUM_LOCK_LED_INDEX 15
-
-// #define SCRL_LOCK_LED_INDEX 14
+#ifdef RGB_MATRIX_ENABLE
+#    define RGB_DISABLE_WHEN_USB_SUSPENDED
+#    define CAPS_LOCK_INDICATOR_COLOR RGB_RED
+#    define CAPS_LOCK_INDICATOR_LIGHT_ALPHAS
+#    define FN_LAYER_TRANSPARENT_KEYS_OFF
+#endif
