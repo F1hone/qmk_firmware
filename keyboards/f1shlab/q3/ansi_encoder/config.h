@@ -32,8 +32,8 @@
     { 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44, 0x9D, 0x9D, 0x44 }
 
 /* Enable CapsLcok LED */
-#define CAPS_LOCK_LED_INDEX 51
+#define CAPS_LOCK_LED_INDEX 13
 
 // #define NUM_LOCK_LED_INDEX 15
 
-// #define SCRL_LOCK_LED_INDEX 14
+// #define SCRL_LOCK_LED_INDEX 16
