@@ -85,4 +85,4 @@
 /* Enable CapsLcok LED */
 #define CAPS_LOCK_LED_INDEX 28
 
-#define DYNAMIC_KEYMAP_MACRO_COUNT 30
+// #define DYNAMIC_KEYMAP_MACRO_COUNT 30
