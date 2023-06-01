@@ -1,5 +1,5 @@
 /*
-Copyright 2022 F1shlab
+Copyright 2023 F1shlab
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,6 +14,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include "quantum.h"
 
-#include "g80_3001.h"
-
+void board_init(void) {
+   //JTAG-DP Disabled and SW-DP Enabled
+   AFIO->MAPR = (AFIO->MAPR & ~AFIO_MAPR_SWJ_CFG_Msk) | AFIO_MAPR_SWJ_CFG_DISABLE;
+}

@@ -21,7 +21,7 @@
         "extrakey": true,
         "console": false,
         "command": false,
-        "nkro": false,
+        "nkro": true,
         "backlight": false,
         "rgblight": false,
         "audio": false,
