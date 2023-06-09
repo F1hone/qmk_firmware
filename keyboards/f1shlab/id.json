@@ -129,3 +129,7 @@ right5x8
 zheng
     "vid": "0x0288",
     "pid": "0x0278",
+
+F-crkbd
+    "vid": "0x0289",
+    "pid": "0x0279",

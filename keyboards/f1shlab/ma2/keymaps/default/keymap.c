@@ -22,7 +22,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         C(A(KC_F)), C(KC_S),  KC_O,            KC_V,    A(KC_E), A(KC_G),       C(KC_G),
         C(A(KC_T)), A(KC_T),  C(KC_O),         A(KC_P), KC_M,    KC_P,          C(KC_C),
         A(KC_COMM), C(KC_L),  C(A(KC_COMM)),   A(KC_S), A(KC_C), KC_X,
-        KC_COMM,    C(KC_P),  C(KC_P),         KC_C,    KC_F,    KC_G,          C(KC_M),
+        KC_COMM,    C(KC_P),  C(KC_COMM),      KC_C,    KC_F,    KC_G,          C(KC_M),
         C(KC_T),    KC_ESC,           KC_P7,   KC_P8,   KC_P9,   KC_PPLS,       C(KC_F),   KC_H,   C(A(KC_S)),
         KC_E,    	KC_BSPC,          KC_P4,   KC_P5,   KC_P6,   KC_PSLS,
         KC_U,       KC_DEL,           KC_P1,   KC_P2,   KC_P3,   KC_PMNS,                  KC_UP,                     C(KC_U),

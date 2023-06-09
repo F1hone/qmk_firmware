@@ -18,7 +18,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define CAPS_LOCK_LED_INDEX 43
 
-#define RGB_DI_PIN B3
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 250
 #define RGBLIGHT_VAL_STEP 10
 #define RGB_MATRIX_LED_COUNT 67

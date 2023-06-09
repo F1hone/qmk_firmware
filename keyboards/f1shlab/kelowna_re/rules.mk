@@ -13,6 +13,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-WS2812_DRIVER = pwm         # Driver for RGB
-RGB_MATRIX_CUSTOM_USER = no
+# WS2812_DRIVER = pwm         # Driver for RGB
+# RGB_MATRIX_CUSTOM_USER = no
 

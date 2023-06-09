@@ -17,11 +17,9 @@
 
 #define WS2812_PWM_DRIVER PWMD3  // default: PWMD2
 #define WS2812_PWM_CHANNEL 2  // default: 2
-#define WS2812_PWM_PAL_MODE 2  // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 2
 #define WS2812_DMA_STREAM STM32_DMA1_STREAM3  // DMA Stream for TIMx_UP, see the respective reference manual for the appropriate values for your MCU.
 #define WS2812_DMA_CHANNEL 3  // DMA Channel for TIMx_UP, see the respective reference manual for the appropriate values for your MCU.
 
-# define RGB_DI_PIN B5
 # define RGBLED_NUM 95
 # define RGB_MATRIX_LED_COUNT RGBLED_NUM
 # define RGB_MATRIX_MAXIMUM_BRIGHTNESS 220
@@ -81,8 +79,5 @@
 #define ENABLE_RGB_MATRIX_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
-
-/* Enable CapsLcok LED */
-#define CAPS_LOCK_LED_INDEX 28
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 2

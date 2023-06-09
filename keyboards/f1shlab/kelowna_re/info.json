@@ -25,6 +25,10 @@
         "backlight": false,
         "rgb_matrix": true
     },
+    "ws2812": {
+        "pin": "A6",
+        "driver": "pwm"
+    },
     "rgb_matrix": {
         "driver": "WS2812",
         "layout": [

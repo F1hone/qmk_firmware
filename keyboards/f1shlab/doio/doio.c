@@ -1,5 +1,5 @@
 /*
-Copyright 2023 F1shlab
+Copyright 2022 F1shlab
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -13,19 +13,30 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 */
+#include "quantum.h"
 
-#pragma once
+#ifdef RGBLIGHT_ENABLE
+const rgblight_segment_t PROGMEM my_capslock_layer[] = RGBLIGHT_LAYER_SEGMENTS(
+    // {2, 1, HSV_WHITE},
+    {0, 9, HSV_WHITE}
+);
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 3
+const rgblight_segment_t* const PROGMEM my_rgb_layers[] = RGBLIGHT_LAYERS_LIST(
+    my_capslock_layer
+);
 
-/* Bootmagic Lite setting 0,3  */
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 3
+void keyboard_post_init_kb(void) {
+    rgblight_layers = my_rgb_layers;
+    rgblight_reload_from_eeprom();
+    keyboard_post_init_user();
+}
 
-#ifdef HAPTIC_ENABLE
-#define SOLENOID_PIN A1
+bool led_update_kb(led_t led_state) {
+    if (led_update_user(led_state)) {
+        rgblight_set_layer_state(0, led_state.caps_lock);
+    }
+    return true;
+}
 #endif
-
-#define BUZZER_ENABLE
-#define BUZZER_PIN A0

@@ -1,0 +1,40 @@
+{
+    "name": "DOIO",
+    "vendorId": "0x00F1",
+    "productId": "0x6060",
+    "menus": [ "qmk_rgblight" ],
+    "keycodes": ["qmk_lighting"],
+    "matrix": { "rows": 2, "cols": 3 },
+    "layouts": {
+      "keymap":[
+        [
+            {
+              "w": 2,
+              "h": 2
+            },
+            "0,0",
+            {
+              "x": 0.5,
+              "w": 2,
+              "h": 2
+            },
+            "0,1"
+          ],
+          [
+            {
+              "y": 1.25,
+              "x": 0.5
+            },
+            "1,0",
+            {
+              "x": 0.25
+            },
+            "1,1",
+            {
+              "x": 0.25
+            },
+            "1,2"
+          ]
+      ]
+    }
+  }

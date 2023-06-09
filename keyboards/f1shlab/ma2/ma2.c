@@ -14,18 +14,9 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+#include "quantum.h"
 
-#pragma once
-
-#define DYNAMIC_KEYMAP_LAYER_COUNT 3
-
-/* Bootmagic Lite setting 0,3  */
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 3
-
-#ifdef HAPTIC_ENABLE
-#define SOLENOID_PIN A1
-#endif
-
-#define BUZZER_ENABLE
-#define BUZZER_PIN A0
+void board_init(void) {
+    AFIO->MAPR |= AFIO_MAPR_TIM3_REMAP_PARTIALREMAP;
+    // AFIO->MAPR |= AFIO_MAPR_TIM2_REMAP_FULLREMAP;
+}

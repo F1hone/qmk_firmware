@@ -21,7 +21,6 @@
 #define WS2812_DMA_STREAM STM32_DMA1_STREAM3  // DMA Stream for TIMx_UP, see the respective reference manual for the appropriate values for your MCU.
 #define WS2812_DMA_CHANNEL 3  // DMA Channel for TIMx_UP, see the respective reference manual for the appropriate values for your MCU.
 
-# define RGB_DI_PIN A6
 # define RGBLED_NUM 80
 # define RGB_MATRIX_LED_COUNT RGBLED_NUM
 # define RGB_MATRIX_MAXIMUM_BRIGHTNESS 220

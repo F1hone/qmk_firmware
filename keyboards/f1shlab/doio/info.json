@@ -1,0 +1,64 @@
+{
+    "keyboard_name": "DOIO",
+    "manufacturer": "F1shlab",
+    "url": "",
+    "maintainer": "F1shBone",
+    "usb": {
+        "vid": "0x00F1",
+        "pid": "0x6060",
+        "device_version": "1.0.0"
+    },
+    "processor": "atmega32u4",
+    "bootloader": "atmel-dfu",
+    "matrix_pins": {
+        "rows": ["D3", "D2"],
+        "cols": ["F5", "F4", "F1"]
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": true,
+        "backlight": false,
+        "rgblight": true,
+        "audio": false,
+        "key_lock": false
+    },
+    "rgblight": {
+        "led_count": 9,
+        "hue_steps": 10,
+        "saturation_steps": 10,
+        "brightness_steps": 10,
+        "max_brightness": 255,
+        "sleep": true,
+        "animations": {
+            "alternating": true,
+            "breathing": true,
+            "christmas": true,
+            "knight": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "rgb_test": true,
+            "snake": true,
+            "static_gradient": true,
+            "twinkle": true
+        }
+    },
+    "ws2812": {
+        "pin": "F6"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K00 (B0,B2)", "matrix": [0, 0], "x": 0, "y": 0, "w": 2, "h": 2},
+                {"label": "K01 (B0,B3)", "matrix": [0, 1], "x": 2.5, "y": 0, "w": 2, "h": 2},
+                {"label": "K10 (B1,B2)", "matrix": [1, 0], "x": 0.5, "y": 2.25},
+                {"label": "K11 (B1,B3)", "matrix": [1, 1], "x": 1.75, "y": 2.25},
+                {"label": "K12 (B1,B4)", "matrix": [1, 2], "x": 3, "y": 2.25}
+           ]
+        }
+    }
+}

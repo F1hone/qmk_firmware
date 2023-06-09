@@ -28,6 +28,10 @@
         "key_lock": false,
         "rgb_matrix": true
     },
+    "ws2812": {
+        "pin": "B5",
+        "driver": "pwm"
+    },
     "rgb_matrix": {
         "driver": "WS2812",
         "layout": [

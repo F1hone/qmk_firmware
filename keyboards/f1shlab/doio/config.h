@@ -1,5 +1,5 @@
 /*
-Copyright 2023 F1shlab
+Copyright 2022 F1shlab
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,18 +14,11 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
 #pragma once
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 3
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+#define RGBLIGHT_LAYERS_RETAIN_VAL
 
-/* Bootmagic Lite setting 0,3  */
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 3
 
-#ifdef HAPTIC_ENABLE
-#define SOLENOID_PIN A1
-#endif
 
-#define BUZZER_ENABLE
-#define BUZZER_PIN A0
