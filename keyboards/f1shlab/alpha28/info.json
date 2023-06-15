@@ -1,8 +1,8 @@
 {
     "keyboard_name": "alpha 28",
-    "manufacturer": "F1shBone",
+    "manufacturer": "F1shlab",
     "url": "",
-    "maintainer": "qmk",
+    "maintainer": "F1shlab",
     "usb": {
         "vid": "0x0285",
         "pid": "0x0275",
@@ -17,16 +17,19 @@
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
+        "command": true,
+        "console": false,
         "mousekey": true,
         "extrakey": true,
-        "console": false,
-        "command": false,
         "nkro": true,
         "backlight": false,
         "rgblight": false,
         "audio": false,
         "key_lock": false,
         "rgb_matrix": true
+    },
+    "ws2812": {
+        "pin": "D5"
     },
     "rgb_matrix": {
         "driver": "WS2812",

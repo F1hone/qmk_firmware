@@ -1,0 +1,21 @@
+{
+    "keyboard_name": "ZEUS65",
+    "usb": {
+        "pid": "0x0266",
+        "device_version": "0.0.1"
+    },
+    "features": {
+        "bootmagic": true,
+        "command": true,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+	    "rgblight": true,
+        "backlight": false,
+        "rgb_matrix": false
+    },
+    "ws2812": {
+        "pin": "B3"
+    }
+}

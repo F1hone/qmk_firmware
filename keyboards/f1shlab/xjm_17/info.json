@@ -29,6 +29,9 @@
         "key_lock": false,
         "rgb_matrix": true
     },
+    "ws2812": {
+        "pin": "E6"
+    },
     "rgb_matrix": {
         "driver": "WS2812",
         "layout": [

@@ -16,15 +16,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #pragma once
 
-// # define RGB_DI_PIN D5
-# define RGB_DI_PIN D1
 # define RGBLED_NUM 28
 # define RGB_MATRIX_LED_COUNT RGBLED_NUM
 # define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
 # define RGBLIGHT_DEFAULT_MODE (RGBLIGHT_MODE_RAINBOW_SWIRL + 5)
 # define RGBLIGHT_DEFAULT_VAL 120
-# define RGBLIGHT_VAL_STEP 20
-# define RGB_DISABLE_WHEN_USB_SUSPENDED
+# define RGBLIGHT_VAL_STEP 10
 # define RGB_MATRIX_CENTER { 112, 32 }
 
 #define ENABLE_RGB_MATRIX_ALPHAS_MODS

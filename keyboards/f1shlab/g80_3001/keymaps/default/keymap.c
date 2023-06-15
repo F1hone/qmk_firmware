@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	             KC_R,  KC_E,    KC_Q,   KC_U,  KC_O,    KC_P,     KC_I,    KC_INT3, KC_SCRL,  KC_PPLS,  KC_P7,   KC_P8,   KC_P9,                     KC_W,
 		         KC_T,  KC_F3,   KC_TAB, KC_Y,  KC_F7,   KC_LBRC,  KC_RBRC, KC_BSPC,           KC_MENU,  KC_P4,   KC_P5,   KC_P6,   KC_LSFT,          KC_CAPS,
 		         KC_F,  KC_D,    KC_A,   KC_J,  KC_L,    KC_SCLN,  KC_K,    KC_BSLS, KC_LNG2,  KC_PENT,  KC_P1,   KC_P2,   KC_P3,                     KC_S,
-		         KC_B,  KC_INT4,         KC_N,  KC_INT2, KC_SLSH,  KC_INT1, KC_SPC,  KC_LALT,  KC_LEFT,  KC_DOWN, KC_RGHT, KC_PMNS,                   KC_INT5,   KC_LGUI),
+		         KC_B,  KC_INT4,         KC_N,  KC_INT2, KC_SLSH,  KC_INT1, KC_SPC,  KC_LALT,  KC_LEFT,  KC_DOWN, KC_RGHT, KC_PMNS,                   KC_INT5,   MO(1)),
   [1] = LAYOUT_fullsize_ansi(
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,                   KC_TRNS,
 		         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,
 		         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS,
 		         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS,
-		         KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_INT1, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, KC_TRNS),
+		         KC_TRNS, KC_TRNS,          NK_TOGG, KC_TRNS, KC_TRNS, KC_INT1, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, KC_TRNS),
   [2] = LAYOUT_fullsize_ansi(
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,                   KC_TRNS,
 		         KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,

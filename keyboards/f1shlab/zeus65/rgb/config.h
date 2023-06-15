@@ -1,5 +1,5 @@
 /*
-Copyright 2023 F1shlab
+Copyright 2022 F1shlab
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -16,15 +16,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #pragma once
 
-# define RGBLED_NUM 17
-# define RGB_MATRIX_LED_COUNT RGBLED_NUM
-# define RGB_MATRIX_MAXIMUM_BRIGHTNESS 220
-# define RGBLIGHT_DEFAULT_VAL 120
-# define RGBLIGHT_VAL_STEP 20
-# define RGB_MATRIX_CENTER { 112, 32 }
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
+#define RGBLIGHT_VAL_STEP 10
+#define RGB_MATRIX_LED_COUNT 67
+#define RGB_MATRIX_DEFAULT_VAL 120
+#define RGB_MATRIX_CENTER { 112, 32 }
 
-# define RGB_MATRIX_KEYPRESSES
-# define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define RGB_MATRIX_KEYPRESSES
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 #define ENABLE_RGB_MATRIX_ALPHAS_MODS
 #define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
@@ -56,11 +55,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENABLE_RGB_MATRIX_PIXEL_FLOW
 #define ENABLE_RGB_MATRIX_PIXEL_RAIN
 
-/* enabled only if RGB_MATRIX_FRAMEBUFFER_EFFECTS is defined */
 #define ENABLE_RGB_MATRIX_TYPING_HEATMAP
 #define ENABLE_RGB_MATRIX_DIGITAL_RAIN
 
-/* enabled only of RGB_MATRIX_KEYPRESSES or RGB_MATRIX_KEYRELEASES is defined */
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE
 #define ENABLE_RGB_MATRIX_SOLID_REACTIVE_WIDE
@@ -74,6 +71,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-/* Enable CapsLcok LED */
-#define NUM_LOCK_LED_INDEX 16
 
+#define CAPS_LOCK_LED_INDEX 43
