@@ -5,7 +5,7 @@
     "maintainer": "F1shlab",
     "usb": {
         "vid": "0x0284",
-        "pid": "0x0274",
+        "pid": "0x0275",
         "device_version": "1.0.0"
     },
     "processor": "STM32F103",
@@ -87,6 +87,7 @@
             { "flags": 4, "matrix": [5, 6], "x": 140, "y": 30 },
             { "flags": 4, "matrix": [5, 7], "x": 159, "y": 30 },
             { "flags": 4, "matrix": [5, 8], "x": 177, "y": 30 },
+            { "flags": 4, "matrix": [5, 10], "x": 215, "y": 30 },
 
             { "flags": 1, "matrix": [6, 0], "x": 9, "y": 36 },
             { "flags": 4, "matrix": [6, 1], "x": 28, "y": 36 },
@@ -199,6 +200,7 @@
                 {"label": "K56 (B5,D4)", "matrix": [5, 6], "x": 7, "y": 6},
                 {"label": "K57 (B5,D5)", "matrix": [5, 7], "x": 8, "y": 6},
                 {"label": "K58 (B5,D6)", "matrix": [5, 8], "x": 9, "y": 6},
+                {"label": "K58 (B5,D6)", "matrix": [5, 10], "x": 11, "y": 6},
 
                 {"label": "K60 (B6,C6)", "matrix": [6, 0], "x": 0, "y": 7.25},
                 {"label": "K61 (B6,C7)", "matrix": [6, 1], "x": 1, "y": 7.25},
