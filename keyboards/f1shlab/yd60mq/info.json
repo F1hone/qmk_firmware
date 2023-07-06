@@ -5,14 +5,51 @@
     "maintainer": "qmk",
     "usb": {
         "vid": "0x594D",
-        "pid": "0x604D"
+        "pid": "0x604D",
+        "device_version": "2.0.0"
     },
+    "development_board": "bluepill",
+    "bootloader": "uf2boot",
+    "matrix_pins": {
+        "rows": ["A7", "B0", "B1", "B2", "B10"],
+        "cols": ["A0", "A1", "A2", "A3", "A4", "A6", "A5", "B12", "B13", "B14", "B3", "A8", "A9", "A10", "B4"]
+    },
+    "diode_direction": "ROW2COL",
     "backlight": {
-        "pin": "B7",
-        "levels": 5
+        "pin": "B9",
+        "levels": 10,
+        "on_state": 1,
+        "breathing": true,
+        "breathing_period": 10
     },
-    "processor": "atmega32u4",
-    "bootloader": "atmel-dfu",
+    "indicators": {
+        "caps_lock": "A15",
+        "on_state": 0
+    },
+    "rgblight": {
+        "led_count": 16,
+        "hue_steps": 12,
+        "saturation_steps": 12,
+        "brightness_steps": 12,
+        "max_brightness": 255,
+        "sleep": true,
+        "animations": {
+            "alternating": true,
+            "breathing": true,
+            "christmas": true,
+            "knight": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "rgb_test": true,
+            "snake": true,
+            "static_gradient": true,
+            "twinkle": true
+        }
+    },
+    "ws2812": {
+        "pin": "B15",
+        "driver": "pwm"
+    },
     "community_layouts": ["60_ansi", "60_ansi_split_bs_rshift", "60_ansi_tsangan", "60_hhkb", "60_iso", "60_iso_split_bs_rshift", "60_iso_tsangan"],
     "layouts": {
         "LAYOUT_all": {
@@ -152,7 +189,7 @@
                 {"x":12.5, "y":4, "w":1.25},
                 {"x":13.75, "y":4, "w":1.25}
             ]
-        }, 
+        },
         "LAYOUT_60_ansi_split_bs": {
             "layout": [
                 {"x":0, "y":0},
