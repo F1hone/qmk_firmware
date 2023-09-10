@@ -28,8 +28,10 @@
         "key_lock": false,
         "lto": true
     },
+    "ws2812": {
+        "pin": "A3"
+    },
     "rgblight": {
-        "pin": "A3",
         "led_count": 2,
         "hue_steps": 10,
         "saturation_steps": 10,
