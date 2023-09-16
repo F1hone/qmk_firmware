@@ -48,7 +48,7 @@
         "driver": "pwm"
     },
     "rgb_matrix": {
-        "driver": "WS2812",
+        "driver": "ws2812",
         "layout": [
             {"matrix": [3, 4], "x": 95, "y": 63, "flags": 1},
             {"matrix": [2, 5], "x": 85, "y": 39, "flags": 4},
