@@ -29,8 +29,8 @@
         "rgb_matrix": true
     },
     "ws2812": {
-        "pin": "B13",
-        "driver": "pwm"
+        "driver": "pwm",
+        "pin": "B13"
     },
     "rgb_matrix": {
         "driver": "ws2812",

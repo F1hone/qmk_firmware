@@ -6,6 +6,7 @@
     "usb": {
         "vid": "0x0286",
         "pid": "0x0277",
+        "force_nkro": true,
         "device_version": "1.0.0"
     },
     "processor": "STM32F401",
@@ -26,6 +27,9 @@
 	    "rgblight": false,
         "backlight": false,
         "rgb_matrix": true
+    },
+    "build": {
+        "debounce_type": "asym_eager_defer_pk"
     },
     "ws2812": {
         "pin": "B5"
