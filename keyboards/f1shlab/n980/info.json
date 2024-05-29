@@ -8,7 +8,8 @@
         "pid": "0x0270",
         "device_version": "1.0.0"
     },
-    "development_board": "bluepill",
+    "processor": "STM32F103",
+    "board": "STM32_F103_STM32DUINO",
     "bootloader": "uf2boot",
     "matrix_pins": {
         "rows": ["A15", "B9", "B7", "A0", "A1", "A2"],

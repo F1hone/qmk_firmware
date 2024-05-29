@@ -1,0 +1,72 @@
+{
+    "keyboard_name": "",
+    "manufacturer": "F1shlab",
+    "url": "",
+    "maintainer": "qmk",
+    "usb": {
+        "vid": "0x0285",
+        "pid": "0x0184",
+        "device_version": "1.0.0"
+    },
+    "processor": "atmega32u4",
+    "bootloader": "atmel-dfu",
+    "matrix_pins": {
+        "rows": ["B0", "B1", "B2"],
+        "cols": ["B3", "B4"]
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "mousekey": true,
+        "extrakey": true,
+        "console": false,
+        "command": false,
+        "nkro": true,
+        "backlight": false,
+        "rgblight": true,
+        "audio": false,
+        "encoder": true,
+        "key_lock": false
+    },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "B1", "pin_b": "B3", "resolution": 2}
+        ]
+    },
+    "rgblight": {
+        "led_count": 6,
+        "hue_steps": 10,
+        "saturation_steps": 10,
+        "brightness_steps": 10,
+        "max_brightness": 255,
+        "sleep": true,
+        "animations": {
+            "alternating": true,
+            "breathing": true,
+            "christmas": true,
+            "knight": true,
+            "rainbow_mood": true,
+            "rainbow_swirl": true,
+            "rgb_test": true,
+            "snake": true,
+            "static_gradient": true,
+            "twinkle": true
+        }
+    },
+    "ws2812": {
+        "driver": "pwm",
+        "pin": "F6"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"label": "K00 (B0,B3)", "matrix": [0, 0], "x": 0, "y": 0},
+                {"label": "K01 (B0,B4)", "matrix": [0, 1], "x": 1, "y": 0},
+                {"label": "K10 (B1,B3)", "matrix": [1, 0], "x": 0, "y": 1},
+                {"label": "K11 (B1,B4)", "matrix": [1, 1], "x": 1, "y": 1},
+                {"label": "K20 (B2,B3)", "matrix": [2, 0], "x": 0, "y": 2},
+                {"label": "K21 (B2,B4)", "matrix": [2, 1], "x": 1, "y": 2}
+           ]
+        }
+    }
+}

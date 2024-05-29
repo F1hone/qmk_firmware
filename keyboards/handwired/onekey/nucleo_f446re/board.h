@@ -4,6 +4,7 @@
 
 #include_next <board.h>
 
-#undef STM32_HSECLK
-#define STM32_HSECLK 8000000U
+// #undef STM32_HSECLK
+// #define STM32_HSECLK 8000000U
+
 #define STM32_HSE_BYPASS

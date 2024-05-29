@@ -17,8 +17,6 @@
 
 #pragma once
 
-#include "config_common.h"
-
 /* key matrix size */
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 14
@@ -42,13 +40,14 @@
     #define RGB_MATRIX_LED_COUNT 80
     #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
     #define RGB_MATRIX_CENTER { 108, 32 }
-    #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
+    #define RGB_MATRIX_DEFAULT_VAL 120
     #define RGBLIGHT_VAL_STEP 20
+
     #define RGB_MATRIX_KEYPRESSES
     #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
     /* RGB Matrix config */
-    #define RGB_DI_PIN B9
+    // #define RGB_DI_PIN B9
 
     /* RGB Matrix effect */
     #define ENABLE_RGB_MATRIX_ALPHAS_MODS

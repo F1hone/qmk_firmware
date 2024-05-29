@@ -1,5 +1,5 @@
 {
-    "keyboard_name": "ZEUS65 RGB",
+    "keyboard_name": "F1sh65 RGB",
     "usb": {
         "pid": "0x0268",
         "device_version": "0.0.1"
@@ -16,7 +16,7 @@
         "rgb_matrix": true
     },
     "rgb_matrix": {
-        "driver": "WS2812",
+        "driver": "ws2812",
         "layout": [
             { "flags": 1, "matrix": [0, 14], "x": 217, "y": 3 },
             { "flags": 1, "matrix": [0, 13], "x": 196, "y": 3 },

@@ -15,11 +15,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include "quantum.h"
+#include "hal.h"
 
-void board_init(void) {
-   //JTAG-DP Disabled and SW-DP Enabled
-   AFIO->MAPR = (AFIO->MAPR & ~AFIO_MAPR_SWJ_CFG_Msk) | AFIO_MAPR_SWJ_CFG_DISABLE;
-}
+// void board_init(void) {
+//    //JTAG-DP Disabled and SW-DP Enabled
+//    AFIO->MAPR = (AFIO->MAPR & ~AFIO_MAPR_SWJ_CFG_Msk) | AFIO_MAPR_SWJ_CFG_DISABLE;
+// }
+#define __HAL_AFIO_REMAP_SWJ_DISABLE()   AFIO_DBGAFR_CONFIG(AFIO_MAPR_SWJ_CFG_DISABLE)
 
 static uint16_t buzzer_timer = 0;
 static uint8_t buzzer_dwell = 15;
