@@ -1,0 +1,24 @@
+// Copyright 2022 beekeeb
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#pragma once
+
+# define RGB_MATRIX_KEYPRESSES
+# define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 9
+
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
+
+/* Enable CapsLcok LED */
+#define CAPS_LOCK_LED_INDEX 12
+
+// #define ANALOG_JOYSTICK_X_AXIS_PIN      GP28
+// #define ANALOG_JOYSTICK_Y_AXIS_PIN      GP29
+// #define ANALOG_JOYSTICK_AXIS_MIN        0
+// #define ANALOG_JOYSTICK_AXIS_MAX        1023
+// #define ANALOG_JOYSTICK_SPEED_REGULATOR 40
+// #define ANALOG_JOYSTICK_READ_INTERVAL   10
+// #define ANALOG_JOYSTICK_SPEED_MAX       6
+// #define AUTO_MOUSE_DEFAULT_LAYER        1
+// #define ANALOG_JOYSTICK_CLICK_PIN       GP23

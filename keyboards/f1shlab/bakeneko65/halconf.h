@@ -17,7 +17,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+#include_next <halconf.h>
+
+#undef HAL_USE_PWM
 #define HAL_USE_PWM TRUE
 
-#include_next <halconf.h>
+
 
