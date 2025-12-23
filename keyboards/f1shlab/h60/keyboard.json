@@ -26,7 +26,6 @@
         "key_lock": false,
         "rgblight": true
     },
-
     "ws2812": {
         "driver": "pwm",
         "pin": "B6"
