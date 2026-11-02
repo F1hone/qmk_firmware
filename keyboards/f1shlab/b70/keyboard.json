@@ -11,7 +11,7 @@
     "processor": "STM32F103",
     "bootloader": "stm32duino",
     "matrix_pins": {
-        "rows": ["A15", "B9", "B13", "A1", "A0"],
+        "rows": ["C13", "A15", "B13", "A1", "A0"],
         "cols": ["A3", "A5", "A4", "A6", "A7", "B0", "B1", "B14", "B15", "A8", "A9", "B6", "B7", "A10", "B3", "B4", "B5"]
     },
     "diode_direction": "COL2ROW",
